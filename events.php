@@ -120,6 +120,8 @@ final class Events implements EventsInterface {
 
 		}
 
+		ksort( $this->registered[ $eventName ] , SORT_NUMERIC );
+		
 		return True;
 		
 	}
